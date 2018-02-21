@@ -22,21 +22,19 @@ done
 cgipid=$(ps -ef | grep -v grep | grep -i "CGIHTTPServer" | awk '{print $2}')
 
 if [[ ${choice} == 1 ]];then
-    if [[ cgipid == "" ]];then
-        cd /usr/local/SWEB
-        screen -dmS SWEB python CGIHTTPServer.py
-    fi
+    kill -s 9 ${cgipid} > /dev/null 2>&1
+    screen -wipe SWEB > /dev/null 2>&1
+    cd /usr/local/SWEB
+    screen -dmS SWEB python CGIHTTPServer.py
     service caddy start
-    /etc/init.d/shadowsocks start
+    /etc/init.d/shadowsocks restart
     iptables -I INPUT -p tcp --dport 8000 -j DROP
     iptables -I INPUT -s 127.0.0.1 -p tcp --dport 8000 -j ACCEPT
 fi
 
 if [[ ${choice} == 2 ]];then
-    if [[ cgipid != "" ]];then
-        kill -s 9 ${cgipid}
-        screen -wipe SWEB
-    fi
+    kill -s 9 ${cgipid} > /dev/null 2>&1
+    screen -wipe SWEB > /dev/null 2>&1
     service caddy stop
     /etc/init.d/shadowsocks stop
 fi
