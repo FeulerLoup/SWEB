@@ -68,7 +68,7 @@ html = '''
      	<h3><i class="fa fa-windows fa-3x"></i> &nbsp; Windows</h3><p><strong>图形客户端</strong></p><ul><li>ShadowsocksR: <a href="https://github.com/shadowsocksrr/shadowsocksr-csharp/releases">点击下载</a></li></ul>
      </div>
       <div class="col-md-4">
-     	<div class="one-third column"><h3><i class="fa fa-apple fa-3x"></i> &nbsp; Mac OS X</h3><p><strong>图形客户端</strong></p><ul><li>ShadowsocksX-NG: <a href="dl.feuler.cn/shadowsocksr/ShadowsocksX-NG-R8.dmg">点击下载</a></li></ul><p><strong>命令行工具</strong></p><ul><li><code>pip install shadowsocks</code></li><li><code>brew install shadowsocks-libev</code></li><li><code>cpan Net::Shadowsocks</code></li></ul></div>
+     	<div class="one-third column"><h3><i class="fa fa-apple fa-3x"></i> &nbsp; Mac OS X</h3><p><strong>图形客户端</strong></p><ul><li>ShadowsocksX-NG: <a href="http://dl.feuler.cn/shadowsocksr/ShadowsocksX-NG-R8.dmg">点击下载</a></li></ul><p><strong>命令行工具</strong></p><ul><li><code>pip install shadowsocks</code></li><li><code>brew install shadowsocks-libev</code></li><li><code>cpan Net::Shadowsocks</code></li></ul></div>
      </div>
       <div class="col-md-4">
      	<div class="one-third column"><h3><i class="fa fa-linux fa-3x"></i> &nbsp; Linux</h3><p><strong>图形客户端</strong></p><ul><li>Shadowsocks-Qt5: <a href="https://github.com/shadowsocks/shadowsocks-qt5/wiki/Installation">GitHub</a></li></ul><p><strong>命令行工具</strong></p><ul><li><code>pip install shadowsocks</code></li><li><code>apt-get install shadowsocks-libev</code></li><li><code>cpan Net::Shadowsocks</code></li></ul></div>
